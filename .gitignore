@@ -1,0 +1,27 @@
+# Secrets
+.env
+!.env.example
+
+# Claude stuff
+CLAUDE.md
+/.claude
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# Floor Mop runtime output
+data/
+logs/
+*.db
+*.sqlite
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/

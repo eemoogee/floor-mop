@@ -1,0 +1,10 @@
+# Floor Mop default configuration.
+# Every value here is a placeholder default, tuned in session.
+# Secrets never go in this file. Supply them via environment variables.
+
+[logging]
+level = "INFO"
+dir = "logs"
+
+[paths]
+data_dir = "data"

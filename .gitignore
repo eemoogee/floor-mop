@@ -25,3 +25,5 @@ logs/
 .DS_Store
 .idea/
 .vscode/
+# Local config overrides
+config/local.toml

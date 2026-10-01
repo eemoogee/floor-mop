@@ -5,6 +5,12 @@
 [logging]
 level = "INFO"
 dir = "logs"
+# Rotate the log file after it reaches this many bytes (10 MiB).
+max_bytes = 10485760
+# Number of rotated log files to keep.
+backup_count = 5
+# Also emit log records to the console.
+console = true
 
 [paths]
 data_dir = "data"

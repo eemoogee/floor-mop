@@ -8,7 +8,7 @@ from collections.abc import Mapping
 from pathlib import Path
 from typing import Any, Literal
 
-from pydantic import BaseModel, ConfigDict, ValidationError
+from pydantic import BaseModel, ConfigDict, NonNegativeInt, PositiveInt, ValidationError
 
 _ENV_PREFIX = "FLOOR_MOP__"
 
@@ -24,6 +24,9 @@ class LoggingConfig(BaseModel):
 
     level: Literal["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"]
     dir: Path
+    max_bytes: PositiveInt
+    backup_count: NonNegativeInt
+    console: bool
 
 
 class PathsConfig(BaseModel):
